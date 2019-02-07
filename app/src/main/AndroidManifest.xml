@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lazy_programmer.tourmate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- PlacePicker also requires OpenGL ES version 2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAiKf9Hv4Ofq0OJ-u8sDoMD0yJrdN6N4gA" />
+
+        <activity
+            android:name=".Weather.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".Weather.AddCityActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Weather.EditCityActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".MainHomePage"
+            android:label="login" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TourMate.SignupActivity" />
+        <activity
+            android:name=".TourMate.TourMateHomePage"
+            android:label="Travel Events" />
+        <activity
+            android:name=".TourMate.AddEventActivity"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".TourMate.EventDetailsActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".TourMate.LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TourMate.ExpenseEntryActivity"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".TourMate.MomentEntryActivity"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".NearBy.PlaceDetailsActivity" />
+        <activity
+            android:name=".NearBy.NearByMainActivity"
+            android:label="@string/title_activity_near_by_main"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NearBy.NearbyJSON.Data.PlaceShortDetailsActivity"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".TourMate.ResetEmailActivity"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".TourMate.ProfileActivity"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+    </application>
+
+</manifest>

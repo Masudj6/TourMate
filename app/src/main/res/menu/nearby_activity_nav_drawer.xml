@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Hospital"
+            android:icon="@drawable/hospital"
+            android:title="Hospital" />
+        <item
+            android:id="@+id/nav_ATM"
+            android:icon="@drawable/atm"
+            android:title="ATM" />
+
+        <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/restaurant"
+            android:title="Restaurant" />
+        <item
+            android:id="@+id/nav_University"
+            android:icon="@drawable/university"
+            android:title="University" />
+        <item
+            android:id="@+id/nav_School"
+            android:icon="@drawable/school"
+            android:title="School" />
+        <item
+            android:id="@+id/nav_Hotel"
+            android:icon="@drawable/hotel"
+            android:title="Hotel" />
+
+        <item
+            android:id="@+id/nav_Bank"
+            android:icon="@drawable/bank"
+            android:title="Bank" />
+        <item
+            android:id="@+id/nav_Police"
+            android:icon="@drawable/police"
+            android:title="Police" />
+    </group>
+
+
+</menu>

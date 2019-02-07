@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tourmate_popup_background"
+    tools:context="com.example.lazy_programmer.tourmate.TourMate.AddEventActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Moment Entry"
+        android:background="#FF4081"
+        android:gravity="center"
+        android:elevation="12dp"
+        android:fontFamily="serif"
+        android:textStyle="bold|normal"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/momentDetailsEt"
+            android:layout_width="match_parent"
+            android:hint="Moment caption"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:textStyle="normal"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#FF4081"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="6"
+            android:background="#fe808083"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/momentImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                 />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@android:drawable/ic_menu_camera"
+                android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnChooseImage"
+                android:paddingTop="15sp"
+                android:textAllCaps="false"
+                android:drawablePadding="-30sp"
+                android:onClick="captureImage" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="#b61b68"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="13dp"
+            android:layout_marginRight="40dp"
+            android:onClick="onEntryMoment"
+            android:layout_gravity="center"
+            android:id="@+id/btnMomentCreate">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/createTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="9dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tourmate_gradient"
+    tools:context="com.example.lazy_programmer.tourmate.TourMate.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/tourmate_main_icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#CCFFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/loginlayout"
+    android:layout_below="@+id/imageView"
+    android:orientation="vertical"
+    android:background="@null"
+    android:layout_marginTop="40dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username_text_input_layout"
+        android:layout_width="250dp"
+        android:textColorHint="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/usernameEt"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="#11a3a0a0"
+            android:drawableStart="@drawable/tourmate_ic_action_user"
+            android:ems="10"
+            android:textColor="#fff"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pass_text_input_layout"
+        app:passwordToggleEnabled="true"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:textColorHint="#fff"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/passworEt"
+            android:fontFamily="serif"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="#11a3a0a0"
+            android:drawableStart="@drawable/tourmate_ic_action_pass"
+            android:ems="10"
+            android:hint="Password"
+            android:textColor="#fff"
+            android:inputType="textPassword"
+            />
+    </android.support.design.widget.TextInputLayout>
+<TextView
+    android:id="@+id/forgetPassTv"
+    android:textColor="#fff"
+    android:text="Forget password?"
+    android:layout_marginTop="10dp"
+    android:onClick="resetUserPass"
+    android:layout_gravity="end"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#1d2391"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:id="@+id/btnSignin"
+        android:onClick="loginPressed"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="31dp"
+        android:layout_below="@+id/pass_text_input_layout"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Login"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/loginlayout">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="135dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="false"
+            android:linksClickable="false"
+            android:textColor="#fff"
+            android:lines="1"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="20dp"
+            android:autoLink="all"
+            android:text="Don't have an account? Register here"
+            />
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="#b61b68"
+        app:cardCornerRadius="20dp"
+        android:layout_marginBottom="15dp"
+        app:cardElevation="10dp"
+        android:onClick="signupPressed"
+        android:layout_gravity="center"
+        android:id="@+id/btnSignup">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/signupTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register here"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+</RelativeLayout>

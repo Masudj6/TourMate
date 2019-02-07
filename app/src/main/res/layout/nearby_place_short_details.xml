@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/tourmate_border_expense"
+    android:layout_height="match_parent"
+    tools:context="com.example.lazy_programmer.tourmate.NearBy.NearbyJSON.Data.PlaceShortDetailsActivity">
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/placeShortDetailsTv"
+        android:layout_width="match_parent"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:fontFamily="serif"
+        android:layout_height="match_parent" />
+
+</android.support.constraint.ConstraintLayout>

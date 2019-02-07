@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lazy_programmer.tourmate.NearBy.PlaceDetailsActivity">
+
+<ScrollView
+    android:id="@+id/scrolly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/placeImageView"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/placeDetailsNameTv"
+            android:textSize="22sp"
+            android:textColor="#08093d"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold|normal"
+            android:fontFamily="serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/placeDetailsAddressTv"
+            android:textSize="15sp"
+            android:textColor="#08093d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold|normal"
+            android:layout_marginTop="7dp"
+            android:fontFamily="serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/placeDetailsPhoneTv"
+               android:textSize="17sp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:textColor="#08093d"
+               android:textStyle="bold|normal"
+               android:layout_marginTop="20dp"
+               android:fontFamily="serif"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <ImageButton
+               android:src="@drawable/nearby_icon_phone"
+               android:id="@+id/btnCallToPlace"
+               android:layout_width="wrap_content"
+               android:onClick="callNumber"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+        <TextView
+            android:id="@+id/placeDetailsRatingTv"
+            android:textSize="15sp"
+            android:textColor="#08093d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold|normal"
+            android:layout_marginTop="7dp"
+            android:fontFamily="serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/weekdaysDetailsTv"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textColor="#08093d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold|normal"
+            android:layout_marginTop="27dp"
+            android:fontFamily="serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.lazy_programmer.tourmate.TourMate.EventDetailsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fragmentContainer"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_weight=".9"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/tourmate_details"
+            android:textColor="#fff"
+            android:elevation="10dp"
+            android:id="@+id/btnFragmentDetails"
+            android:paddingTop="0sp"
+            android:textAllCaps="false"
+            android:drawablePadding="-10sp"
+            android:onClick="changeFragment"
+            android:text="Details"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:drawableTop="@drawable/tourmate_expense"
+            android:textColor="#fff"
+            android:id="@+id/btnFragmentExpense"
+            android:paddingTop="0sp"
+            android:elevation="10dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:drawablePadding="-10sp"
+            android:onClick="changeFragment"
+            android:text="Expense"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="10dp"
+            android:drawableTop="@drawable/tourmate_moment"
+            android:textColor="#fff"
+            android:id="@+id/btnFragmentMoment"
+            android:onClick="changeFragment"
+            android:paddingTop="0sp"
+            android:textAllCaps="false"
+            android:drawablePadding="-10sp"
+            android:text="Moments"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

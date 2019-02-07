@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.lazy_programmer.tourmate.TourMate.fragments.DetailsFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/detailsLocationTv"
+            android:text="Destination: Dhaka"
+            android:textSize="25sp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:elevation="14dp"
+            android:textStyle="bold|normal"
+            android:layout_marginTop="35dp"
+            android:textColor="#080739"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/detailsFromDateTv"
+            android:text="From: 29 JUN 2017"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:elevation="14dp"
+            android:textStyle="bold|normal"
+            android:layout_marginTop="30dp"
+            android:textColor="#060831"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/detailsToDateTv"
+            android:text="To: 30 JUN 2017"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:elevation="14dp"
+            android:textStyle="bold|normal"
+            android:layout_marginTop="30dp"
+            android:textColor="#060831"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/detailsBudgetTv"
+            android:text="Budget: 2000 tk"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:elevation="14dp"
+            android:gravity="center"
+            android:textStyle="bold|normal"
+            android:layout_marginTop="30dp"
+            android:textColor="#060831"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/remainingBalanceTv"
+            android:text="Remaining Balance: 2000 tk"
+            android:textSize="22sp"
+            android:fontFamily="serif"
+            android:elevation="14dp"
+            android:gravity="center"
+            android:textStyle="bold|normal"
+            android:layout_marginTop="30dp"
+            android:textColor="#fa010d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>

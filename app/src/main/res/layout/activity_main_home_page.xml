@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.lazy_programmer.tourmate.MainHomePage">
+
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/main_icon_design"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgTourMate"
+            android:src="@drawable/main_icon_tourmate"
+            android:layout_width="160dp"
+            android:layout_height="160dp" />
+    </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_marginTop="30dp"
+      android:orientation="horizontal"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="180dp">
+
+      <RelativeLayout
+          android:layout_width="145dp"
+          android:background="@drawable/main_icon_design"
+          android:layout_height="145dp">
+
+          <ImageView
+
+              android:id="@+id/imgNearby"
+              android:layout_width="100dp"
+              android:background="@drawable/main_icon_design"
+              android:layout_height="100dp"
+              android:layout_marginLeft="50dp"
+              android:clickable="true"
+              android:src="@drawable/main_icon_nearby"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true" />
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="145dp"
+          android:layout_marginLeft="20dp"
+          android:background="@drawable/main_icon_design"
+          android:layout_height="145dp"
+          >
+          <ImageView
+            android:id="@+id/imgWeather"
+              android:src="@drawable/main_icon_weather"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:clickable="true"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true" />
+      </RelativeLayout>
+
+
+
+  </LinearLayout>
+
+</LinearLayout>

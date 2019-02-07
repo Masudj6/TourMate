@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tourmate_gradient"
+    tools:context="com.example.lazy_programmer.tourmate.TourMate.LoginActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/tourmate_main_icon"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input1"
+            android:layout_width="330dp"
+            android:textColorHint="#fff"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/fullNameEt"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="#11a3a0a0"
+                android:drawableStart="@drawable/tourmate_ic_action_user"
+                android:ems="10"
+                android:textColor="#fff"
+                android:hint="    Full Name"
+                android:inputType="textPersonName"
+                android:textSize="16dp"
+                android:fontFamily="serif"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input3"
+            android:layout_width="330dp"
+            android:textColorHint="#fff"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/regEmailEt"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="#11a3a0a0"
+                android:drawableStart="@drawable/tourmate_ic_action_user"
+                android:ems="10"
+                android:textColor="#fff"
+                android:hint="    Email address"
+                android:inputType="textEmailAddress"
+                android:textSize="16dp"
+                android:fontFamily="serif"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input4"
+            android:layout_width="330dp"
+            android:textColorHint="#fff"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/phoneEt"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="#11a3a0a0"
+                android:drawableStart="@drawable/tourmate_ic_action_user"
+                android:ems="10"
+                android:textColor="#fff"
+                android:hint="    Phone number"
+                android:inputType="phone"
+                android:textSize="16dp"
+                android:fontFamily="serif"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input5"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="10dp"
+            android:layout_width="330dp"
+            android:textColorHint="#fff"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/regPassworEt"
+                android:fontFamily="serif"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="#11a3a0a0"
+                android:drawableStart="@drawable/tourmate_ic_action_pass"
+                android:ems="10"
+                android:hint="    Password"
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pass_text_input_layout"
+            app:passwordToggleEnabled="true"
+            android:layout_width="330dp"
+            android:textColorHint="#fff"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/confirmPasswordEt"
+                android:fontFamily="serif"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="#11a3a0a0"
+                android:drawableStart="@drawable/tourmate_ic_action_pass"
+                android:ems="10"
+                android:hint="    Confirm password"
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="#b61b68"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp"
+            android:onClick="submitRegInfo"
+            android:id="@+id/btnCreateAccount"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="31dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/signupTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Create account"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>

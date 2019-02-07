@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:id="@+id/g1">
+
+                <item
+                    android:title="Edit location"
+                    android:icon="@android:drawable/btn_dialog"
+                    android:id="@+id/editItem"
+                    />
+                <item
+                    android:id="@+id/nav_current"
+                    android:icon="@drawable/weather_search_icon"
+                    android:title="Current Location" />
+
+
+
+
+        </group>
+
+        <group android:id="@+id/g2">
+
+
+        </group>
+
+
+
+
+
+
+
+</menu>

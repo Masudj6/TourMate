@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/tourmate_border_expense"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.lazy_programmer.tourmate.TourMate.ProfileActivity">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="#1d1c1c"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Client Profile"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginRight="25dp"
+            android:textSize="25sp"
+            android:layout_weight="12"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:background="@drawable/tourmate_border_expense"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profilePic"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tourmate_default_profilepic"
+            app:border_color="#6c6a6a"
+            app:border_width="5dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableTop="@android:drawable/ic_menu_camera"
+            android:textColor="#FFFFFF"
+            android:id="@+id/changeProfilePic"
+            android:paddingTop="10sp"
+            android:textAllCaps="false"
+            android:drawablePadding="-30sp"
+            android:onClick="changePicture"
+            android:text="Change picture"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_marginTop="19dp"
+            android:id="@+id/userNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:fontFamily="serif"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:layout_gravity="center"/>
+
+
+
+        <TextView
+            android:id="@+id/userPhoneTv"
+            android:text="00000000000"
+            android:fontFamily="serif"
+            android:textColor="#fff"
+            android:layout_marginTop="18dp"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/userEmailTv"
+            android:fontFamily="serif"
+            android:textColor="#fff"
+            android:text="Email"
+            android:textSize="16sp"
+            android:layout_marginTop="13dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+<ImageView
+    android:src="@mipmap/arrow_left"
+    android:layout_width="50dp"
+    android:onClick="closeActivity"
+    android:layout_gravity="end"
+    android:layout_marginRight="20dp"
+    android:layout_height="50dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

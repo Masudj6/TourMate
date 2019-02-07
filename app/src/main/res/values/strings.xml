@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tour Mate</string>
+    <string name="title_activity_second">SecondActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tour_mate_home_page">Home Page</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_near_by_main">Nearby Places</string>
+</resources>
